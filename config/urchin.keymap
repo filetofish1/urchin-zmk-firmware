@@ -248,6 +248,20 @@
             require-prior-idle-ms = <200>;
             layers = <2>;
         };
+
+        bootloader_1 {
+            bindings = <&mo 3>;
+            key-positions = <30 31>;
+            layers = <0>;
+            require-prior-idle-ms = <1000>;
+        };
+
+        bootloader_2 {
+            bindings = <&mo 3>;
+            key-positions = <32 33>;
+            layers = <0>;
+            require-prior-idle-ms = <1000>;
+        };
     };
 
     macros {
@@ -389,6 +403,17 @@
             >;
 
             label = "system";
+        };
+
+        bootloader {
+            bindings = <
+&trans  &trans  &trans  &trans  &bootloader  &bootloader  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans       &trans       &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans       &trans       &trans  &trans  &trans  &trans
+                        &trans  &trans       &trans       &trans
+            >;
+
+            label = "bootloader";
         };
     };
 };
