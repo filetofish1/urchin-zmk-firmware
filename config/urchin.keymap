@@ -182,7 +182,7 @@
             key-positions = <26 27>;
             timeout-ms = <18>;
             require-prior-idle-ms = <50>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         page_up {
