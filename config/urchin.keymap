@@ -241,26 +241,36 @@
             layers = <2>;
         };
 
-        keyboard_reset {
-            bindings = <&bootloader>;
-            key-positions = <0 1 2 3 6 7 8 9>;
-            timeout-ms = <200>;
-            require-prior-idle-ms = <200>;
+        to_numpad_R {
+            bindings = <&to 1>;
+            key-positions = <9 19>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+            layers = <0>;
+        };
+
+        from_numpad_R {
+            bindings = <&to 0>;
+            key-positions = <9 19>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+            layers = <1>;
+        };
+
+        to_system_L {
+            bindings = <&to 2>;
+            key-positions = <0 10>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+            layers = <0>;
+        };
+
+        from_system_L {
+            bindings = <&to 0>;
+            key-positions = <0 10>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
             layers = <2>;
-        };
-
-        bootloader_1 {
-            bindings = <&mo 3>;
-            key-positions = <30 31>;
-            layers = <0>;
-            require-prior-idle-ms = <1000>;
-        };
-
-        bootloader_2 {
-            bindings = <&mo 3>;
-            key-positions = <32 33>;
-            layers = <0>;
-            require-prior-idle-ms = <1000>;
         };
     };
 
@@ -403,17 +413,6 @@
             >;
 
             label = "system";
-        };
-
-        bootloader {
-            bindings = <
-&trans  &trans  &trans  &trans  &bootloader  &bootloader  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans       &trans       &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans       &trans       &trans  &trans  &trans  &trans
-                        &trans  &trans       &trans       &trans
-            >;
-
-            label = "bootloader";
         };
     };
 };
