@@ -27,7 +27,7 @@
 
         exlam {
             bindings = <&kp EXCLAMATION>;
-            key-positions = <11 1>;
+            key-positions = <0 10>;
             timeout-ms = <25>;
             require-prior-idle-ms = <100>;
             layers = <0>;
@@ -35,7 +35,7 @@
 
         at {
             bindings = <&kp AT_SIGN>;
-            key-positions = <2 12>;
+            key-positions = <1 11>;
             timeout-ms = <25>;
             require-prior-idle-ms = <100>;
             layers = <0>;
@@ -43,7 +43,7 @@
 
         hash {
             bindings = <&kp HASH>;
-            key-positions = <3 13>;
+            key-positions = <2 12>;
             timeout-ms = <25>;
             require-prior-idle-ms = <100>;
             layers = <0>;
@@ -51,7 +51,7 @@
 
         dollar {
             bindings = <&kp DOLLAR>;
-            key-positions = <4 14>;
+            key-positions = <3 13>;
             timeout-ms = <25>;
             require-prior-idle-ms = <100>;
             layers = <0>;
@@ -59,7 +59,7 @@
 
         percent {
             bindings = <&kp PERCENT>;
-            key-positions = <5 15>;
+            key-positions = <6 16>;
             timeout-ms = <25>;
             require-prior-idle-ms = <100>;
             layers = <0>;
@@ -67,7 +67,7 @@
 
         caret {
             bindings = <&kp CARET>;
-            key-positions = <6 16>;
+            key-positions = <7 17>;
             timeout-ms = <25>;
             require-prior-idle-ms = <100>;
             layers = <0>;
@@ -75,7 +75,7 @@
 
         ampersand {
             bindings = <&kp AMPERSAND>;
-            key-positions = <7 17>;
+            key-positions = <18 8>;
             timeout-ms = <25>;
             require-prior-idle-ms = <100>;
             layers = <0>;
@@ -83,7 +83,7 @@
 
         asterix {
             bindings = <&kp ASTERISK>;
-            key-positions = <8 18>;
+            key-positions = <9 19>;
             timeout-ms = <25>;
             require-prior-idle-ms = <100>;
             layers = <0>;
