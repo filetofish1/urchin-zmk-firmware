@@ -210,7 +210,7 @@
             require-prior-idle-ms = <50>;
             layers = <1>;
         };
-
+/*
         to_numpad {
             bindings = <&to 1>;
             key-positions = <10 20>;
@@ -281,6 +281,7 @@
             layers = <0>;
             require-prior-idle-ms = <250>;
         };
+*/
     };
 
     macros {
