@@ -210,6 +210,18 @@
             layers = <1>;
         };
 
+        middle_click {
+            bindings = <&mkp MB3>;
+            key-positions = <33 32>;
+            layers = <3>;
+        };
+
+        mouse_layer {
+            bindings = <&tog 3>;
+            key-positions = <10 2 31>;
+            layers = <0 3>;
+        };
+
         /*
         to_numpad {
             bindings = <&to 1>;
@@ -451,6 +463,17 @@
             >;
 
             label = "system";
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &mmv MOVE_UP    &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans           &trans
+                        &trans  &trans  &mkp MB1  &mkp MB2
+            >;
+
+            label = "mouse";
         };
     };
 };
