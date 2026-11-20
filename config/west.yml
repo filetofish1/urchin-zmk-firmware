@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: duckyb
       url-base: https://github.com/duckyb
-    - name: m165437
-      url-base: https://github.com/M165437
+    - name: am
+      url-base: https://github.com/am
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -16,8 +16,8 @@ manifest:
     - name: urchin-zmk-module
       remote: duckyb
       revision: main
-    - name: nice-view-gem
-      remote: m165437
-      revision: v0.3.0
+    - name: nice-view-strata
+      remote: am
+      revision: main
   self:
     path: config
