@@ -465,40 +465,40 @@
             label = "system";
         };
 
-        /* Layer 3: normal mouse speed.
-         * Hold the first thumb key for layer 4 (slow/precision).
+        /* Layer 3: base mouse speed, 1200.
+         * Hold the first thumb key for layer 4 (slow).
          * Hold the second thumb key for layer 5 (fast).
          */
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &mmv MOVE_UP    &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans           &trans
-                        &mo 4   &mo 5   &mkp MB1  &mkp MB2
+&trans  &trans  &trans  &trans  &trans  &trans    &trans                 &mmv MOVE_Y(-1200)  &trans                 &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_X(-1200)     &mmv MOVE_Y(1200)   &mmv MOVE_X(1200)      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans                 &trans               &trans                  &trans
+                        &mo 4   &mo 5   &mkp MB1              &mkp MB2
             >;
 
             label = "mouse";
         };
 
-        /* Layer 4: precision speed, max 200 versus the normal default of 600. */
+        /* Layer 4: slow mouse speed, 600. */
         mouse_slow {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans                 &mmv MOVE_Y(-200)  &trans                &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_X(-200)      &mmv MOVE_Y(200)   &mmv MOVE_X(200)      &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans                 &trans              &trans                 &trans
-                        &trans  &trans  &trans                 &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans                &mmv MOVE_Y(-600)  &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_X(-600)     &mmv MOVE_Y(600)   &mmv MOVE_X(600)      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans                &trans             &trans                 &trans
+                        &trans  &trans  &trans                &trans
             >;
 
             label = "mouse_slow";
         };
 
-        /* Layer 5: fast speed, max 1200 versus the normal default of 600. */
+        /* Layer 5: fast mouse speed, 2400. */
         mouse_fast {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans                 &mmv MOVE_Y(-1200)  &trans                 &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_X(-1200)     &mmv MOVE_Y(1200)   &mmv MOVE_X(1200)      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans                 &mmv MOVE_Y(-2400)  &trans                 &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_X(-2400)     &mmv MOVE_Y(2400)   &mmv MOVE_X(2400)      &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans                 &trans               &trans                  &trans
-                        &trans  &trans  &trans                  &trans
+                        &trans  &trans  &trans                 &trans
             >;
 
             label = "mouse_fast";
