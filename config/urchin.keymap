@@ -465,14 +465,14 @@
             label = "system";
         };
 
-        /* Layer 3: base mouse speed, 1200.
+        /* Layer 3: base mouse speed, 1600.
          * Hold the first thumb key for layer 4 (slow).
          * Hold the second thumb key for layer 5 (fast).
          */
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans                 &mmv MOVE_Y(-1200)  &trans                 &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_X(-1200)     &mmv MOVE_Y(1200)   &mmv MOVE_X(1200)      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans                 &mmv MOVE_Y(-1600)  &trans                 &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_X(-1600)     &mmv MOVE_Y(1600)   &mmv MOVE_X(1600)      &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans                 &trans               &trans                  &trans
                         &mo 4   &mo 5   &mkp MB1              &mkp MB2
             >;
@@ -480,11 +480,11 @@
             label = "mouse";
         };
 
-        /* Layer 4: slow mouse speed, 600. */
+        /* Layer 4: slow mouse speed, 900. */
         mouse_slow {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans                &mmv MOVE_Y(-600)  &trans               &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_X(-600)     &mmv MOVE_Y(600)   &mmv MOVE_X(600)      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans                &mmv MOVE_Y(-900)  &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_X(-900)     &mmv MOVE_Y(900)   &mmv MOVE_X(900)      &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans                &trans             &trans                 &trans
                         &trans  &trans  &trans                &trans
             >;
@@ -492,11 +492,11 @@
             label = "mouse_slow";
         };
 
-        /* Layer 5: fast mouse speed, 2400. */
+        /* Layer 5: fast mouse speed, 2800. */
         mouse_fast {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans                 &mmv MOVE_Y(-2400)  &trans                 &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_X(-2400)     &mmv MOVE_Y(2400)   &mmv MOVE_X(2400)      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans                 &mmv MOVE_Y(-2800)  &trans                 &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_X(-2800)     &mmv MOVE_Y(2800)   &mmv MOVE_X(2800)      &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans                 &trans               &trans                  &trans
                         &trans  &trans  &trans                 &trans
             >;
